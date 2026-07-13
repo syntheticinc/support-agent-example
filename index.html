@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acme — project management, simplified</title>
+  <style>
+    :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6; color: #1a1a2e; background: #fafafc;
+    }
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.25rem 2rem; border-bottom: 1px solid #ececf2;
+    }
+    .logo { font-weight: 700; font-size: 1.25rem; letter-spacing: -0.02em; }
+    .logo span { color: #5b5bd6; }
+    nav a { margin-left: 1.5rem; text-decoration: none; color: #55556a; font-size: 0.95rem; }
+    .hero { max-width: 720px; margin: 5rem auto; padding: 0 2rem; text-align: center; }
+    .hero h1 { font-size: 2.75rem; letter-spacing: -0.03em; margin: 0 0 1rem; }
+    .hero p { font-size: 1.15rem; color: #55556a; margin: 0 0 2rem; }
+    .btn {
+      display: inline-block; padding: 0.75rem 1.75rem; background: #5b5bd6; color: #fff;
+      border-radius: 8px; text-decoration: none; font-weight: 600;
+    }
+    .features { max-width: 900px; margin: 0 auto 6rem; padding: 0 2rem;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
+    .card { padding: 1.5rem; background: #fff; border: 1px solid #ececf2; border-radius: 12px; }
+    .card h3 { margin: 0 0 0.5rem; font-size: 1.05rem; }
+    .card p { margin: 0; color: #55556a; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Acme<span>.</span></div>
+    <nav>
+      <a href="#">Product</a>
+      <a href="#">Pricing</a>
+      <a href="#">Docs</a>
+      <a href="#">Sign in</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Project management, simplified.</h1>
+    <p>Plans, tasks, and teams in one place. Ship faster, together.</p>
+    <a class="btn" href="#">Start free</a>
+  </section>
+
+  <section class="features">
+    <div class="card"><h3>Unlimited projects</h3><p>Organize work across every team without limits on Pro and Business.</p></div>
+    <div class="card"><h3>File uploads</h3><p>Attach anything up to 100 MB per file, virus-scanned on upload.</p></div>
+    <div class="card"><h3>SSO &amp; security</h3><p>Single sign-on and priority support on the Business plan.</p></div>
+  </section>
+
+  <!-- ▼ Support agent widget — paste the snippet your coding agent returns.
+       Replace data-api-key with your chat-scoped key (see PROMPT.md / embed-example.html). -->
+  <script src="https://app.syntheticbrew.ai/widget.js"
+          data-schema="acme-support"
+          data-api-key="YOUR_CHAT_SCOPED_KEY_HERE">
+  </script>
+</body>
+</html>
