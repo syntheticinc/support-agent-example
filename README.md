@@ -8,8 +8,9 @@ knowledge base for your own docs and you have a support agent grounded in *your*
 
 ## What you get
 
-- An agent that answers questions **only from your docs** — and says "I don't have that
-  in the docs" instead of hallucinating when it doesn't know.
+- An agent prompted to retrieve from your docs before answering and to say when the
+  supplied material does not contain an answer. Test this behavior with both supported
+  and unsupported questions before publishing it.
 - **Per-visitor memory** — it remembers what a user told it (team size, plan, needs)
   across sessions, isolated per visitor.
 - A **drop-in chat widget** — one `<script>` tag on any page.
@@ -26,8 +27,9 @@ That's the whole pitch: **your coding agent provisions the support agent for you
 
 1. **Fork this repo** and replace `knowledge-base/*.md` with your own product docs
    (plain markdown — pricing, limits, policies, FAQs; see the samples for the shape).
-2. **Install the SyntheticBrew MCP** in your coding agent — one line, from the
-   [catalog listing](https://smithery.ai/servers/info-sn82/syntheticbrew) or docs.
+2. **Connect the SyntheticBrew MCP** over OAuth by following the current
+   [coding-agent guide](https://syntheticbrew.ai/docs/integration/connect-coding-agent/).
+   Approve the `provision` capability so the coding agent can create and link resources.
 3. **Paste the prompt** in [`PROMPT.md`](./PROMPT.md) to your coding agent.
    It creates the agent, uploads your docs as a knowledge base, links them, and
    returns a widget snippet.
@@ -35,7 +37,7 @@ That's the whole pitch: **your coding agent provisions the support agent for you
    (New here? Hit **"Use this template"** above to get your own copy in one click.)
 4. **Drop the snippet** on your site (see [`embed-example.html`](./embed-example.html)).
 
-Free tier is enough to try the whole thing end to end.
+Check the current workspace limits before uploading the sample documents.
 
 ## What's in here
 
@@ -53,4 +55,5 @@ Free tier is enough to try the whole thing end to end.
   a clear update. Don't market it as "it magically remembers everything" — passing
   mentions aren't always captured. Set the expectation accordingly.
 
-Built on [SyntheticBrew](https://syntheticbrew.ai) — an embeddable agent runtime.
+Built on [SyntheticBrew](https://syntheticbrew.ai) — available as managed SyntheticBrew
+Cloud or a licensed Enterprise deployment for customer-managed private infrastructure.
