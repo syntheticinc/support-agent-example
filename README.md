@@ -55,5 +55,5 @@ Check the current workspace limits before uploading the sample documents.
   a clear update. Don't market it as "it magically remembers everything" — passing
   mentions aren't always captured. Set the expectation accordingly.
 
-Built on [SyntheticBrew](https://syntheticbrew.ai) — available as managed SyntheticBrew
-Cloud or a licensed Enterprise deployment for customer-managed private infrastructure.
+Built on [SyntheticBrew](https://syntheticbrew.ai) — start with managed SyntheticBrew
+Cloud or run Enterprise in customer-managed private infrastructure.
