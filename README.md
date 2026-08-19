@@ -11,8 +11,9 @@ knowledge base for your own docs and you have a support agent grounded in *your*
 - An agent prompted to retrieve from your docs before answering and to say when the
   supplied material does not contain an answer. Test this behavior with both supported
   and unsupported questions before publishing it.
-- **Per-visitor memory** — it remembers what a user told it (team size, plan, needs)
-  across sessions, isolated per visitor.
+- **Per-visitor memory** — the widget keeps a visitor ID in browser local storage and
+  SyntheticBrew namespaces it under the Chat-scoped key, so selected facts can be
+  recalled for that visitor and schema across sessions.
 - A **drop-in chat widget** — one `<script>` tag on any page.
 
 ## The point: you don't write provisioning code
@@ -54,6 +55,9 @@ Check the current workspace limits before uploading the sample documents.
 - Memory is reliable when a user **explicitly** asks it to remember something or states
   a clear update. Don't market it as "it magically remembers everything" — passing
   mentions aren't always captured. Set the expectation accordingly.
+- Clearing browser storage creates a new anonymous visitor identity. If your product
+  already authenticates users, use your backend integration and a stable verified user
+  identity instead of treating the anonymous widget ID as an account identifier.
 
 Built on [SyntheticBrew](https://syntheticbrew.ai) — start with managed SyntheticBrew
 Cloud or run Enterprise in customer-managed private infrastructure.
