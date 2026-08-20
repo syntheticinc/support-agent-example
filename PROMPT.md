@@ -1,8 +1,9 @@
 # Prompt for your coding agent
 
-Prerequisite: the **SyntheticBrew MCP** is installed in your coding agent, and you have
-a SyntheticBrew account (free tier is fine). Open this repo folder in your agent, then
-paste the prompt below.
+Prerequisite: connect your coding agent to the **SyntheticBrew MCP** by following the
+[OAuth onboarding guide](https://syntheticbrew.ai/docs/integration/connect-coding-agent/)
+and approve the `provision` capability. Open this repository folder in your coding agent,
+then paste the prompt below.
 
 ---
 
